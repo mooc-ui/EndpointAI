@@ -289,7 +289,7 @@ int main (void)
                     .fnHandler = &__pfb_draw_background_handler,
                 },
             },
-            .FrameBuffer.bSwapRGB16 = true,
+            //.FrameBuffer.bSwapRGB16 = true,
         ) < 0) {
         //! error detected
         assert(false);

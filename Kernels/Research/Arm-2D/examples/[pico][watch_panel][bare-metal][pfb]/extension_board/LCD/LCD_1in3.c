@@ -109,6 +109,10 @@ static void LCD_1IN3_InitReg(void)
     LCD_1IN3_SendCommand(0xC6);  //Frame Rate Control in Normal Mode
     LCD_1IN3_SendData_8Bit(0x0F);
     
+    LCD_1IN3_SendCommand(0xB0);
+    LCD_1IN3_SendData_8Bit(0x00);
+    LCD_1IN3_SendData_8Bit(0xC8);
+    
     LCD_1IN3_SendCommand(0xD0);  // Power Control 1
     LCD_1IN3_SendData_8Bit(0xA4);
     LCD_1IN3_SendData_8Bit(0xA1);
